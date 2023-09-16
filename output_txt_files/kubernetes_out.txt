@@ -1,22 +1,21 @@
 (.devops) voclabs:~/environment/Operationalize-Machine-Learning-Microservice (main) $ sh ./run_kubernetes.sh
-pod/myomlm-api created
-NAME         READY   STATUS              RESTARTS   AGE
-myomlm-api   0/1     ContainerCreating   0          0s
-error: unable to forward port because pod is not running. Current status=Pending
-(.devops) voclabs:~/environment/Operationalize-Machine-Learning-Microservice (main) $ sh ./run_kubernetes.sh
 Error from server (AlreadyExists): pods "myomlm-api" already exists
-NAME         READY   STATUS              RESTARTS   AGE
-myomlm-api   0/1     ContainerCreating   0          19s
-error: unable to forward port because pod is not running. Current status=Pending
-(.devops) voclabs:~/environment/Operationalize-Machine-Learning-Microservice (main) $ sh ./run_kubernetes.sh
-Error from server (AlreadyExists): pods "myomlm-api" already exists
-NAME         READY   STATUS              RESTARTS   AGE
-myomlm-api   0/1     ContainerCreating   0          32s
-error: unable to forward port because pod is not running. Current status=Pending
-(.devops) voclabs:~/environment/Operationalize-Machine-Learning-Microservice (main) $ sh ./run_kubernetes.sh
 NAME         READY   STATUS    RESTARTS   AGE
-myomlm-api   1/1     Running   0          73s
+myomlm-api   1/1     Running   0          34m
 Forwarding from 127.0.0.1:8000 -> 80
 Forwarding from [::1]:8000 -> 80
 Handling connection for 8000
 Handling connection for 8000
+Handling connection for 8000
+Handling connection for 8000
+Handling connection for 8000
+
+
+voclabs:~/environment/Operationalize-Machine-Learning-Microservice (main) $ sh ./make_prediction.sh
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
+
